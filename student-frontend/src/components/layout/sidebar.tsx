@@ -2,12 +2,26 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, GraduationCap, Plus } from "lucide-react";
+import {
+  LayoutDashboard,
+  GraduationCap,
+  Users,
+  BookOpen,
+  Shuffle,
+  ClipboardList,
+  Award,
+  Plus,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const mainMenu = [
   { label: "Overview", icon: LayoutDashboard, href: "/" },
   { label: "Students", icon: GraduationCap, href: "/students" },
+  { label: "Teachers", icon: Users, href: "/teachers" },
+  { label: "Subjects", icon: BookOpen, href: "/subjects" },
+  { label: "Allocations", icon: Shuffle, href: "/allocations" },
+  { label: "Tests", icon: ClipboardList, href: "/tests" },
+  { label: "Marks", icon: Award, href: "/marks" },
 ];
 
 export function Sidebar() {
